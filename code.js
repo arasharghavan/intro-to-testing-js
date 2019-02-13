@@ -4,7 +4,11 @@ function helloWorld() {
 }
 
 function sayHello() {
-    return "";
+    if("alex"){
+    return ("hello, alex!");}
+    else{
+        return ("hello, jane!");
+    }
 }
 
 
