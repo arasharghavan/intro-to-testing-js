@@ -20,11 +20,17 @@ function isEven(input) {
 
 
 function isVowel(input) {
-
     if (typeof input !== "string" || input === "" ){
-        return false;
-    } else {return input.match(/[aeiou]/gi) !== null}
-
+        return false;}
+       else if (input.length > 0 ){return input.charAt(0).match(/[aeiou]/gi) !== null}
 }
 
 
+function isAdd(input1, input2) {
+    var sum = +input1 + +input2;
+    if (!isNaN(sum)) {
+        return sum;
+    }else if(isNaN(sum)){
+        return isNaN;
+    }
+}

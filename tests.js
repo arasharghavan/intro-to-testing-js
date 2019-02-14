@@ -45,6 +45,10 @@ describe('isFive',function () {
     it('should return true at all time', function () {
         expect(isFive()).toBe(true);
     });
+    it('should return a boolean value', function() {
+        expect(typeof isFive()).toBe('boolean');
+    });
+
 });
 
 // Unit tests for the isEven function
@@ -80,6 +84,9 @@ describe('isEven', function () {
     it('returns false when calles without an argument like isEven()', function () {
         expect(isEven()).toBe(false);
     });
+    it('should return a boolean value', function() {
+        expect(typeof isEven()).toBe('boolean');
+    });
 
 
 });
@@ -109,17 +116,49 @@ describe('isVowel',function () {
         expect(isVowel(false)).toBe(false);
     });
     it('isVowel("banana") returns false', function () {
-        expect(isVowel("")).toBe(false);
+        expect(isVowel("banana")).toBe(false);
     });
     it('isVowel() returns false', function () {
         expect(isVowel()).toBe(false);
     });
+    it('should return a boolean value', function() {
+        expect(typeof isVowel()).toBe('boolean');
+    });
+
 });
 
+// Unit tests for the isAdd function
 
+describe('isAdd',function () {
+    it('should be defined function', function () {
+        expect(typeof isAdd).toBe('function');
+    });
+    it(' add(2, 3) returns 5', function () {
+        expect(isAdd(2, 3)).toBe(5);
+    });
+    it('add(-3, -9) returns -12', function () {
+        expect(isAdd(-3, -9)).toBe(-12);
+    });
+    it('add("5", 6) returns 11', function () {
+        expect(isAdd("5", 6)).toBe(11);
+    });
+    it('add("-4", "10") returns 6', function () {
+        expect(isAdd("-4", "10")).toBe(6);
+    });
+    it('add("banana", "split") returns NaN', function () {
+        expect(isAdd("banana", "split")).toBe(isNaN);
+    });
+    it('add(2, "apples") returns NaN', function () {
+        expect(isAdd( 2, "apples")).toBe(isNaN);
+    });
+    it('add() returns NaN', function () {
+        expect(isAdd()).toBe(isNaN);
+    });
+    it('should return a number when passed two numbers', function() {
+        expect(typeof (isAdd(1, 2))).toBe('number');
+    });
 
-
-
+});
 
 
 
