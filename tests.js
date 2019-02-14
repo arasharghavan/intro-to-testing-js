@@ -84,7 +84,37 @@ describe('isEven', function () {
 
 });
 
+// Unit tests for the isVowel function
 
+describe('isVowel',function () {
+    it('should be defined function', function () {
+        expect(typeof isVowel).toBe('function');
+    });
+    it('isVowel("a") returns true', function () {
+        expect(isVowel("a")).toBe(true);
+    });
+    it('isVowel("A") returns true', function () {
+        expect(isVowel("A")).toBe(true);
+    });
+    it('isVowel("y") returns false', function () {
+        expect(isVowel("y")).toBe(false);
+    });
+    it('isVowel(4) returns false', function () {
+        expect(isVowel(4)).toBe(false);
+    });
+    it('isVowel(true) return false', function () {
+        expect(isVowel(true)).toBe(false);
+    });
+    it('isVowel(false) return false', function () {
+        expect(isVowel(false)).toBe(false);
+    });
+    it('isVowel("banana") returns false', function () {
+        expect(isVowel("")).toBe(false);
+    });
+    it('isVowel() returns false', function () {
+        expect(isVowel()).toBe(false);
+    });
+});
 
 
 
