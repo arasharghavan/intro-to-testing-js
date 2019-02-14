@@ -3,21 +3,9 @@ function helloWorld() {
     return "Hello, World!";
 }
 
-function sayHello() {
-    if("alex"){
-    return ("hello, alex!");}
-    else{
-        return ("hello, jane!");
-    }
+function sayHello(input) {
+    return ("hello, " + input + "!");
 }
-
-
-
-
-
-
-
-
 
 
 
