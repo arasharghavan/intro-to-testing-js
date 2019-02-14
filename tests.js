@@ -21,14 +21,17 @@ describe("sayHello", function () {
     it("should return a string when called.",function () {
        expect(typeof sayHello()).toBe("string");
     });
-    it('should return "hello, alex"', function () {
+    it('should return "hello, alex!"', function () {
         expect(sayHello("alex")).toBe("hello, alex!");
     });
     it('should return "hello, pat!"', function () {
         expect(sayHello("pat")).toBe("hello, pat!");
     });
+    it('should return "hello, world!"', function () {
+        expect(sayHello(true)).toBe("hello, world!");
+    });
+    it('should return"hello, world"', function () {
+        expect(sayHello(false)).toBe("hello, world");
+    });
 });
-
-
-
 
