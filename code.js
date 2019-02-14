@@ -14,4 +14,6 @@ function isFive() {
 }
 
 
-
+function isEven(input) {
+    return input % 2 === 0 && input !== true && input !== false;
+}
