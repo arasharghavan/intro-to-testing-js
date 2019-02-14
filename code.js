@@ -9,5 +9,9 @@ function sayHello(input) {
     else{return ("hello, " + input + "!");}
 }
 
+function isFive() {
+    return true;
+}
+
 
 
